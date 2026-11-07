@@ -1,0 +1,223 @@
+[
+  {
+    "id": "Q01",
+    "bid_id": "Bid1",
+    "question": "What is the official bid or solicitation number?",
+    "filters": {},
+    "expected_passages": [
+      {
+        "file_contains": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information",
+        "page_number": null
+      }
+    ],
+    "annotation_note": "BidNet HTML source for Bid1; page_number is null because this is not a paginated PDF."
+  },
+  {
+    "id": "Q02",
+    "bid_id": "Bid1",
+    "question": "What is the full title of the student and staff computing devices bid?",
+    "filters": {},
+    "expected_passages": [
+      {
+        "file_contains": "JA-207652 Student and Staff Computing Devices FINAL",
+        "page_number": 1
+      }
+    ],
+    "annotation_note": "The cover/title page of the final JA-207652 RFP is PDF page 1."
+  },
+  {
+    "id": "Q03",
+    "bid_id": "Bid1",
+    "question": "What is the final proposal submission deadline after the addendums?",
+    "filters": {
+      "doc_type": "addendum"
+    },
+    "expected_passages": [
+      {
+        "file_contains": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices",
+        "page_number": 1
+      }
+    ],
+    "annotation_note": "Addendum 2, PDF page 1, extends the RFP due date to July 9, 2024 at 2:00 PM CST."
+  },
+  {
+    "id": "Q04",
+    "bid_id": "Bid1",
+    "question": "How must the bidder submit its proposal?",
+    "filters": {},
+    "expected_passages": [
+      {
+        "file_contains": "JA-207652 Student and Staff Computing Devices FINAL",
+        "page_number": 9
+      }
+    ],
+    "annotation_note": "Final RFP PDF page 9 contains the online iSupplier submission preference and the manual sealed-envelope submission instructions; fax/email submissions are not accepted."
+  },
+  {
+    "id": "Q05",
+    "bid_id": "Bid1",
+    "question": "Is a pre-bid meeting scheduled, and is attendance mandatory?",
+    "filters": {},
+    "expected_passages": [
+      {
+        "file_contains": "JA-207652 Student and Staff Computing Devices FINAL",
+        "page_number": 2
+      }
+    ],
+    "annotation_note": "Final RFP PDF page 2 gives the June 10, 2024 pre-proposal meeting and says participation is highly encouraged, not mandatory."
+  },
+  {
+    "id": "Q06",
+    "bid_id": "Bid1",
+    "question": "Is a bid bond or bid security required?",
+    "filters": {},
+    "expected_passages": [
+      {
+        "file_contains": "JA-207652 Student and Staff Computing Devices FINAL",
+        "page_number": 17
+      }
+    ],
+    "annotation_note": "Final RFP PDF page 17 contains the Insurance and/or Bonds section. The indexed text says requirements are enumerated elsewhere in contract documents and requires an insurance/bond form within 10 days of award. It does not provide a standalone bid-bond amount or clearly state that a bid bond is required; verify the referenced contract documents before treating the answer as yes/no."
+  },
+  {
+    "id": "Q07",
+    "bid_id": "Bid1",
+    "question": "What delivery schedule or delivery date is required?",
+    "filters": {},
+    "expected_passages": [
+      {
+        "file_contains": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices",
+        "page_number": 1
+      },
+      {
+        "file_contains": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices",
+        "page_number": 4
+      }
+    ],
+    "annotation_note": "Addendum 1 PDF page 1 states quotes for different projects were anticipated to begin in September 2024. Page 4 says awarded vendors must coordinate a delivery schedule with the Dallas ISD EdTech department."
+  },
+  {
+    "id": "Q08",
+    "bid_id": "Bid1",
+    "question": "What installation, imaging, or deployment services are required?",
+    "filters": {},
+    "expected_passages": [
+      {
+        "file_contains": "JA-207652 Student and Staff Computing Devices FINAL",
+        "page_number": 3
+      },
+      {
+        "file_contains": "JA-207652 Student and Staff Computing Devices FINAL",
+        "page_number": 7
+      },
+      {
+        "file_contains": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices",
+        "page_number": 4
+      }
+    ],
+    "annotation_note": "Final RFP PDF page 3 specifies white-glove deployment services including asset decaling, asset reporting, etching, and delivery to varied locations. Page 7 lists software installation, asset tagging/etching, deployment/setup, and asset-control reporting. Addendum 1 PDF page 4 clarifies Windows Autopilot and Google Management enrollment for Chromebooks."
+  },
+  {
+    "id": "Q09",
+    "bid_id": "Bid2",
+    "question": "Which affidavits or signed forms must be submitted?",
+    "filters": {},
+    "expected_passages": [
+      {
+        "file_contains": "Contract_Affidavit",
+        "page_number": 1
+      },
+      {
+        "file_contains": "Mercury_Affidavit",
+        "page_number": 1
+      },
+      {
+        "file_contains": "PORFP_-_Dell_Laptop_Final",
+        "page_number": 2
+      }
+    ],
+    "annotation_note": "The chunk set contains both Contract_Affidavit.pdf and Mercury_Affidavit.pdf (each PDF page 1). PORFP page 2 explicitly requires a Mercury Affidavit. The indexed PORFP text does not explicitly name the Contract Affidavit as mandatory, so confirm that requirement against the full solicitation package."
+  },
+  {
+    "id": "Q10",
+    "bid_id": "Bid2",
+    "question": "What Dell laptop model number or product model is requested?",
+    "filters": {
+      "doc_type": "specs"
+    },
+    "expected_passages": [
+      {
+        "file_contains": "Dell_Laptop_Specs",
+        "page_number": 1
+      }
+    ],
+    "annotation_note": "Dell_Laptop_Specs.pdf page 1 identifies the requested Dell Latitude 5550 (SI # CC7802)."
+  },
+  {
+    "id": "Q11",
+    "bid_id": "Bid2",
+    "question": "What processor, memory, and storage specifications are required?",
+    "filters": {
+      "doc_type": "specs"
+    },
+    "expected_passages": [
+      {
+        "file_contains": "Dell_Laptop_Specs",
+        "page_number": 1
+      }
+    ],
+    "annotation_note": "Dell_Laptop_Specs.pdf page 1 contains the processor, 16 GB memory, and 256 GB SSD details."
+  },
+  {
+    "id": "Q12",
+    "bid_id": "Bid2",
+    "question": "What warranty coverage or extended warranty is required?",
+    "filters": {},
+    "expected_passages": [
+      {
+        "file_contains": "PORFP_-_Dell_Laptop_Final",
+        "page_number": 3
+      }
+    ],
+    "annotation_note": "PORFP PDF page 3 specifies a three-year Dell Limited Hardware Warranty extended for all machines purchased, with certificate or affidavit deliverable."
+  },
+  {
+    "id": "Q13",
+    "bid_id": "Bid2",
+    "question": "Who is the procurement contact and what contact details are provided?",
+    "filters": {},
+    "expected_passages": [
+      {
+        "file_contains": "Dell Laptops w_Extended Warranty - Bid Information",
+        "page_number": null
+      }
+    ],
+    "annotation_note": "BidNet HTML source for Bid2; page_number is null because this is not a paginated PDF."
+  },
+  {
+    "id": "Q14",
+    "bid_id": "Bid2",
+    "question": "What payment terms or invoicing conditions apply?",
+    "filters": {},
+    "expected_passages": [
+      {
+        "file_contains": "PORFP_-_Dell_Laptop_Final",
+        "page_number": 2
+      }
+    ],
+    "annotation_note": "PORFP PDF page 2 contains the invoicing instructions, including submission within 10 days after equipment delivery and required invoice details."
+  },
+  {
+    "id": "Q15",
+    "bid_id": "Bid2",
+    "question": "Is a cooperative or state contract vehicle referenced?",
+    "filters": {},
+    "expected_passages": [
+      {
+        "file_contains": "PORFP_-_Dell_Laptop_Final",
+        "page_number": 1
+      }
+    ],
+    "annotation_note": "PORFP PDF page 1 references the 2015 Desktop, Laptop and Tablet Master Contract, number 060B5400007, as the eligibility vehicle for this secondary competition."
+  }
+]

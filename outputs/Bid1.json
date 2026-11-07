@@ -1,0 +1,240 @@
+{
+  "bid_id": "Bid1",
+  "fields": {
+    "Due Date": {
+      "value": "July 9, 2024 2:00 pm CST",
+      "sources": [
+        {
+          "bid_id": "Bid1",
+          "file": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+          "page": 1,
+          "doc_type": "addendum",
+          "addendum_number": 2,
+          "chunk_id": "f09e09a6fcfd903bc85d5abb",
+          "label": "Bid1 — Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf, page 1"
+        }
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "Bid Submission Type": {
+      "value": "manual",
+      "sources": [
+        {
+          "bid_id": "Bid1",
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 9,
+          "doc_type": "rfp",
+          "addendum_number": null,
+          "chunk_id": "58ced48d156ca66f63032377",
+          "label": "Bid1 — JA-207652 Student and Staff Computing Devices FINAL.pdf, page 9"
+        }
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "Term of Bid": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents"
+    },
+    "Pre Bid Meeting": {
+      "value": "June 10, 2024 2:00 pm CST",
+      "sources": [
+        {
+          "bid_id": "Bid1",
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 2,
+          "doc_type": "rfp",
+          "addendum_number": null,
+          "chunk_id": "71f9554abc4e861789440f14",
+          "label": "Bid1 — JA-207652 Student and Staff Computing Devices FINAL.pdf, page 2"
+        }
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "Installation": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents"
+    },
+    "Delivery Date": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents"
+    },
+    "Payment Terms": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents"
+    },
+    "Bid Bond Requirement": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents"
+    },
+    "Any Additional Documentation Required": {
+      "value": "Completed, signed, and dated M/WBE compliance guidelines & forms; M/WBE certificates; affirmative action, equal employment opportunity or supplier diversity plan; signed, dated and notarized joint venture agreement; signed, dated and notarized mentor‑protege agreement; minutes or prime‑subcontractor teaming agreement",
+      "sources": [
+        {
+          "bid_id": "Bid1",
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 49,
+          "doc_type": "rfp",
+          "addendum_number": null,
+          "chunk_id": "444ee0ba97ea7b3c78f9673a",
+          "label": "Bid1 — JA-207652 Student and Staff Computing Devices FINAL.pdf, page 49"
+        }
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "MFG for Registration": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents"
+    },
+    "Contract or Cooperative to use": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents"
+    },
+    "Bid Number": {
+      "value": "JA-207652",
+      "sources": [
+        {
+          "bid_id": "Bid1",
+          "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+          "page": null,
+          "doc_type": "bid_page",
+          "addendum_number": null,
+          "chunk_id": "1b951e49981d592f6fd4da6f",
+          "label": "Bid1 — Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html"
+        }
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "Title": {
+      "value": "student and staff computing devices",
+      "sources": [
+        {
+          "bid_id": "Bid1",
+          "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+          "page": null,
+          "doc_type": "bid_page",
+          "addendum_number": null,
+          "chunk_id": "1b951e49981d592f6fd4da6f",
+          "label": "Bid1 — Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html"
+        }
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "Model_no": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents"
+    },
+    "Part_no": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents"
+    },
+    "Product": {
+      "value": "computing devices",
+      "sources": [
+        {
+          "bid_id": "Bid1",
+          "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+          "page": null,
+          "doc_type": "bid_page",
+          "addendum_number": null,
+          "chunk_id": "1b951e49981d592f6fd4da6f",
+          "label": "Bid1 — Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html"
+        }
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "contact_info": {
+      "value": "procurement services 972-925-3700 procurementcs@dallasisd.org",
+      "sources": [
+        {
+          "bid_id": "Bid1",
+          "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+          "page": null,
+          "doc_type": "bid_page",
+          "addendum_number": null,
+          "chunk_id": "1b951e49981d592f6fd4da6f",
+          "label": "Bid1 — Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html"
+        }
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "company_name": {
+      "value": "Dallas Independent School District",
+      "sources": [
+        {
+          "bid_id": "Bid1",
+          "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+          "page": null,
+          "doc_type": "bid_page",
+          "addendum_number": null,
+          "chunk_id": "1b951e49981d592f6fd4da6f",
+          "label": "Bid1 — Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html"
+        }
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "Product Specification": {
+      "value": "Minimum hardware requirements for each tier of device required by Dallas ISD, including laptops, desktops, tablet devices, and display monitors.",
+      "sources": [
+        {
+          "bid_id": "Bid1",
+          "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+          "page": null,
+          "doc_type": "bid_page",
+          "addendum_number": null,
+          "chunk_id": "1b951e49981d592f6fd4da6f",
+          "label": "Bid1 — Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html"
+        }
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "Bid Summary": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Extraction failed; review agent trace: RateLimitError"
+    }
+  },
+  "addendum_changes": [],
+  "validation": {
+    "passed": 10,
+    "failed": 0,
+    "not_found": 10,
+    "issues": [
+      {
+        "field": "__critic_error__",
+        "reason": "Semantic critic unavailable: APIStatusError: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-20b` in organization `org_01m2z0hqjaefyavs0fxh5djr7t` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 15321, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+        "retry": false
+      }
+    ],
+    "retry_count": 0,
+    "max_retries": 2
+  }
+}

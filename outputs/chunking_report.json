@@ -1,0 +1,31 @@
+{
+  "input_file": "outputs\\normalized_documents.jsonl",
+  "output_file": "outputs\\chunks.jsonl",
+  "tokenizer": "BAAI/bge-large-en-v1.5",
+  "chunk_size_tokens": 450,
+  "overlap_tokens": 60,
+  "input_records": 81,
+  "total_chunks": 503,
+  "records_without_chunks": 5,
+  "max_observed_chunk_tokens": 450,
+  "chunks_by_bid": {
+    "Bid1": 450,
+    "Bid2": 53
+  },
+  "chunks_by_doc_type": {
+    "addendum": 14,
+    "rfp": 471,
+    "bid_page": 3,
+    "affidavit": 8,
+    "specs": 7
+  },
+  "chunks_by_content_type": {
+    "text": 319,
+    "table": 184
+  },
+  "notes": [
+    "PDF page-level source metadata is preserved on each chunk.",
+    "Text and extracted tables are emitted as separate content types.",
+    "This phase does not generate embeddings or write to a vector/keyword database."
+  ]
+}

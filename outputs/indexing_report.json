@@ -1,0 +1,20 @@
+{
+  "created_at_utc": "2026-11-06T16:25:42.650124+00:00",
+  "input_file": "outputs\\chunks.jsonl",
+  "input_sha256": "a68b01abcb207bf7fd2fcad33621162b1cefa99ecfb945f43fff28eb09a5a62d",
+  "embedding_model": "BAAI/bge-large-en-v1.5",
+  "embedding_dimension": 1024,
+  "device": "cpu",
+  "batch_size": 16,
+  "qdrant_url": "http://localhost:6333",
+  "qdrant_collection": "rfp_chunks",
+  "elasticsearch_url": "http://localhost:9200",
+  "elasticsearch_index": "rfp_chunks",
+  "chunks_indexed_this_run": 0,
+  "chunks_skipped_unchanged": 503,
+  "elasticsearch_errors": 0,
+  "manifest_entries": 503,
+  "force_reindex": false,
+  "chunks_by_bid": {},
+  "incremental_behavior": "Unchanged chunks are skipped using a local fingerprint manifest; changed chunks are upserted; new chunks are inserted."
+}

@@ -1,0 +1,228 @@
+[
+  {
+    "timestamp_utc": "2026-11-06T16:32:28.446103+00:00",
+    "agent": "orchestrator_agent",
+    "action": "plan",
+    "status": "success",
+    "input": {
+      "mode": "extract",
+      "bid_id": "Bid999",
+      "question": null
+    },
+    "tool_calls": [],
+    "output": {
+      "plan": [
+        "Retrieve evidence for specialist field groups in parallel",
+        "Reconcile addendums",
+        "Validate every field and citation",
+        "Retry rejected fields up to the configured maximum",
+        "Write cited JSON and agent trace"
+      ]
+    },
+    "token_usage": {},
+    "latency_ms": 0.01,
+    "error": null
+  },
+  {
+    "timestamp_utc": "2026-11-06T16:32:48.972114+00:00",
+    "agent": "extraction_agent",
+    "action": "dates_logistics",
+    "status": "no_evidence",
+    "input": {
+      "bid_id": "Bid999",
+      "fields": [
+        "Due Date",
+        "Bid Submission Type",
+        "Term of Bid",
+        "Pre Bid Meeting",
+        "Installation",
+        "Delivery Date",
+        "Payment Terms"
+      ]
+    },
+    "tool_calls": [
+      {
+        "tool": "hybrid_search",
+        "query": "Find bid due date and exact submission deadline and time zone, submission method, contract term and renewal, pre-bid meeting, installation, delivery schedule, and payment terms.",
+        "result_count": 0
+      }
+    ],
+    "output": {
+      "fields": [
+        "Due Date",
+        "Bid Submission Type",
+        "Term of Bid",
+        "Pre Bid Meeting",
+        "Installation",
+        "Delivery Date",
+        "Payment Terms"
+      ]
+    },
+    "token_usage": {},
+    "latency_ms": 20519.46,
+    "error": null
+  },
+  {
+    "timestamp_utc": "2026-11-06T16:32:49.429336+00:00",
+    "agent": "extraction_agent",
+    "action": "commercial_documents",
+    "status": "no_evidence",
+    "input": {
+      "bid_id": "Bid999",
+      "fields": [
+        "Bid Bond Requirement",
+        "Any Additional Documentation Required",
+        "MFG for Registration",
+        "Contract or Cooperative to use"
+      ]
+    },
+    "tool_calls": [
+      {
+        "tool": "hybrid_search",
+        "query": "Find bid bond or bid security requirement and amount, required affidavits and other forms or certificates, manufacturer authorization or registration, and cooperative or state contract vehicle.",
+        "result_count": 0
+      }
+    ],
+    "output": {
+      "fields": [
+        "Bid Bond Requirement",
+        "Any Additional Documentation Required",
+        "MFG for Registration",
+        "Contract or Cooperative to use"
+      ]
+    },
+    "token_usage": {},
+    "latency_ms": 20976.57,
+    "error": null
+  },
+  {
+    "timestamp_utc": "2026-11-06T16:32:49.453897+00:00",
+    "agent": "extraction_agent",
+    "action": "product_company",
+    "status": "no_evidence",
+    "input": {
+      "bid_id": "Bid999",
+      "fields": [
+        "Bid Number",
+        "Title",
+        "Model_no",
+        "Part_no",
+        "Product",
+        "contact_info",
+        "company_name",
+        "Product Specification"
+      ]
+    },
+    "tool_calls": [
+      {
+        "tool": "hybrid_search",
+        "query": "Find official solicitation number and title, issuing agency, procurement contact name email and phone, products and quantities, manufacturer model numbers, part numbers, and all technical specifications including CPU RAM storage display and warranty.",
+        "result_count": 0
+      }
+    ],
+    "output": {
+      "fields": [
+        "Bid Number",
+        "Title",
+        "Model_no",
+        "Part_no",
+        "Product",
+        "contact_info",
+        "company_name",
+        "Product Specification"
+      ]
+    },
+    "token_usage": {},
+    "latency_ms": 21000.54,
+    "error": null
+  },
+  {
+    "timestamp_utc": "2026-11-06T16:32:49.443785+00:00",
+    "agent": "extraction_agent",
+    "action": "summary",
+    "status": "no_evidence",
+    "input": {
+      "bid_id": "Bid999",
+      "fields": [
+        "Bid Summary"
+      ]
+    },
+    "tool_calls": [
+      {
+        "tool": "hybrid_search",
+        "query": "Find the purpose, scope, requested products, quantities, key technical requirements, procurement conditions, and important dates for a concise bid summary.",
+        "result_count": 0
+      }
+    ],
+    "output": {
+      "fields": [
+        "Bid Summary"
+      ]
+    },
+    "token_usage": {},
+    "latency_ms": 20990.42,
+    "error": null
+  },
+  {
+    "timestamp_utc": "2026-11-06T16:32:51.912862+00:00",
+    "agent": "addendum_reconciliation_agent",
+    "action": "reconcile",
+    "status": "no_addendums_found",
+    "input": {
+      "bid_id": "Bid999"
+    },
+    "tool_calls": [
+      {
+        "tool": "hybrid_search",
+        "filters": {
+          "bid_id": "Bid999",
+          "doc_type": "addendum"
+        },
+        "result_count": 0
+      }
+    ],
+    "output": {
+      "changes": 0
+    },
+    "token_usage": {},
+    "latency_ms": 2457.63,
+    "error": null
+  },
+  {
+    "timestamp_utc": "2026-11-06T16:32:51.913447+00:00",
+    "agent": "validator_critic_agent",
+    "action": "validate",
+    "status": "success",
+    "input": {
+      "fields": 20,
+      "evidence_passages": 0
+    },
+    "tool_calls": [],
+    "output": {
+      "passed": 0,
+      "failed": 0,
+      "not_found": 20,
+      "failed_fields": []
+    },
+    "token_usage": {},
+    "latency_ms": 0.03,
+    "error": null
+  },
+  {
+    "timestamp_utc": "2026-11-06T16:32:51.916699+00:00",
+    "agent": "qa_report_agent",
+    "action": "write_final_json",
+    "status": "success",
+    "input": {
+      "bid_id": "Bid999"
+    },
+    "tool_calls": [],
+    "output": {
+      "json_path": "D:\\RFP_Intelligence_Platform\\outputs\\Bid999.json",
+      "fields": 20
+    },
+    "token_usage": {},
+    "latency_ms": 1.79,
+    "error": null
+  }
+]

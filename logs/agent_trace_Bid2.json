@@ -1,0 +1,451 @@
+[
+  {
+    "timestamp_utc": "2026-11-06T15:07:13.071276+00:00",
+    "agent": "orchestrator_agent",
+    "action": "plan",
+    "status": "success",
+    "input": {
+      "mode": "extract",
+      "bid_id": "Bid2",
+      "question": null
+    },
+    "tool_calls": [],
+    "output": {
+      "plan": [
+        "Retrieve evidence for specialist field groups in parallel",
+        "Reconcile addendums",
+        "Validate every field and citation",
+        "Retry rejected fields up to the configured maximum",
+        "Write cited JSON and agent trace"
+      ]
+    },
+    "token_usage": {},
+    "latency_ms": 0.01,
+    "error": null
+  },
+  {
+    "timestamp_utc": "2026-11-06T15:07:43.665611+00:00",
+    "agent": "extraction_agent",
+    "action": "dates_logistics",
+    "status": "success",
+    "input": {
+      "bid_id": "Bid2",
+      "fields": [
+        "Due Date",
+        "Bid Submission Type",
+        "Term of Bid",
+        "Pre Bid Meeting",
+        "Installation",
+        "Delivery Date",
+        "Payment Terms"
+      ],
+      "query": "Find bid due date and exact submission deadline and time zone, submission method, contract term and renewal, pre-bid meeting, installation, delivery schedule, and payment terms."
+    },
+    "tool_calls": [
+      {
+        "tool": "hybrid_search",
+        "query": "Find bid due date and exact submission deadline and time zone, submission method, contract term and renewal, pre-bid meeting, installation, delivery schedule, and payment terms.",
+        "result_count": 6,
+        "filters": {
+          "bid_id": "Bid2"
+        },
+        "returned_chunks": [
+          "99980c744d309859cd453276",
+          "aa0531bbf42bc8c71765c83c",
+          "d447b3e4ea6d11369471a30b",
+          "2ef31320329d57ff1d875b40",
+          "e4c693c04ddc74d787f85d05",
+          "2fe6c3ab655b32ae5f26d10d"
+        ]
+      }
+    ],
+    "output": {
+      "fields": {
+        "Due Date": {
+          "value": "06/10/2024",
+          "sources": [
+            {
+              "bid_id": "Bid2",
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 1,
+              "doc_type": "rfp",
+              "addendum_number": null,
+              "chunk_id": "aa0531bbf42bc8c71765c83c",
+              "label": "Bid2 — PORFP_-_Dell_Laptop_Final.pdf, page 1"
+            }
+          ],
+          "confidence": 0.9,
+          "notes": ""
+        },
+        "Bid Submission Type": {
+          "value": "Electronic submission via Emma e‑procurement system",
+          "sources": [
+            {
+              "bid_id": "Bid2",
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 1,
+              "doc_type": "rfp",
+              "addendum_number": null,
+              "chunk_id": "aa0531bbf42bc8c71765c83c",
+              "label": "Bid2 — PORFP_-_Dell_Laptop_Final.pdf, page 1"
+            }
+          ],
+          "confidence": 0.9,
+          "notes": ""
+        },
+        "Term of Bid": {
+          "value": "90 days",
+          "sources": [
+            {
+              "bid_id": "Bid2",
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 2,
+              "doc_type": "rfp",
+              "addendum_number": null,
+              "chunk_id": "99980c744d309859cd453276",
+              "label": "Bid2 — PORFP_-_Dell_Laptop_Final.pdf, page 2"
+            }
+          ],
+          "confidence": 0.9,
+          "notes": ""
+        },
+        "Pre Bid Meeting": {
+          "value": null,
+          "sources": [],
+          "confidence": 0.0,
+          "notes": "Not found in documents"
+        },
+        "Installation": {
+          "value": null,
+          "sources": [],
+          "confidence": 0.0,
+          "notes": "Not found in documents"
+        },
+        "Delivery Date": {
+          "value": "45 days after award",
+          "sources": [
+            {
+              "bid_id": "Bid2",
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 2,
+              "doc_type": "rfp",
+              "addendum_number": null,
+              "chunk_id": "99980c744d309859cd453276",
+              "label": "Bid2 — PORFP_-_Dell_Laptop_Final.pdf, page 2"
+            }
+          ],
+          "confidence": 0.9,
+          "notes": ""
+        },
+        "Payment Terms": {
+          "value": null,
+          "sources": [],
+          "confidence": 0.0,
+          "notes": "Not found in documents"
+        }
+      },
+      "cited_fields": 4
+    },
+    "token_usage": {
+      "input_tokens": 2994,
+      "output_tokens": 1105,
+      "total_tokens": 4099,
+      "output_token_details": {
+        "reasoning": 637
+      }
+    },
+    "latency_ms": 30585.61,
+    "error": null
+  },
+  {
+    "timestamp_utc": "2026-11-06T15:08:25.682502+00:00",
+    "agent": "extraction_agent",
+    "action": "commercial_documents",
+    "status": "error",
+    "input": {
+      "bid_id": "Bid2",
+      "fields": [
+        "Bid Bond Requirement",
+        "Any Additional Documentation Required",
+        "MFG for Registration",
+        "Contract or Cooperative to use"
+      ]
+    },
+    "tool_calls": [],
+    "output": {
+      "fields": [
+        "Bid Bond Requirement",
+        "Any Additional Documentation Required",
+        "MFG for Registration",
+        "Contract or Cooperative to use"
+      ],
+      "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m2z0hqjaefyavs0fxh5djr7t` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 3221, Requested 5056. Please try again in 2.0775s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+    },
+    "token_usage": {},
+    "latency_ms": 72604.31,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m2z0hqjaefyavs0fxh5djr7t` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 3221, Requested 5056. Please try again in 2.0775s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+  },
+  {
+    "timestamp_utc": "2026-11-06T15:07:55.733315+00:00",
+    "agent": "extraction_agent",
+    "action": "product_company",
+    "status": "success",
+    "input": {
+      "bid_id": "Bid2",
+      "fields": [
+        "Bid Number",
+        "Title",
+        "Model_no",
+        "Part_no",
+        "Product",
+        "contact_info",
+        "company_name",
+        "Product Specification"
+      ],
+      "query": "Find official solicitation number and title, issuing agency, procurement contact name email and phone, products and quantities, manufacturer model numbers, part numbers, and all technical specifications including CPU RAM storage display and warranty."
+    },
+    "tool_calls": [
+      {
+        "tool": "hybrid_search",
+        "query": "Find official solicitation number and title, issuing agency, procurement contact name email and phone, products and quantities, manufacturer model numbers, part numbers, and all technical specifications including CPU RAM storage display and warranty.",
+        "result_count": 6,
+        "filters": {
+          "bid_id": "Bid2"
+        },
+        "returned_chunks": [
+          "d447b3e4ea6d11369471a30b",
+          "89abe18d794f34cc82a823e5",
+          "bcade8aec8468f263f398e32",
+          "99980c744d309859cd453276",
+          "aa0531bbf42bc8c71765c83c",
+          "55e7441e178db912420d090b"
+        ]
+      }
+    ],
+    "output": {
+      "fields": {
+        "Bid Number": {
+          "value": "e20p4600040",
+          "sources": [
+            {
+              "bid_id": "Bid2",
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 1,
+              "doc_type": "rfp",
+              "addendum_number": null,
+              "chunk_id": "aa0531bbf42bc8c71765c83c",
+              "label": "Bid2 — PORFP_-_Dell_Laptop_Final.pdf, page 1"
+            }
+          ],
+          "confidence": 1.0,
+          "notes": ""
+        },
+        "Title": {
+          "value": null,
+          "sources": [],
+          "confidence": 0.0,
+          "notes": "Not found in documents"
+        },
+        "Model_no": {
+          "value": "CC7802",
+          "sources": [
+            {
+              "bid_id": "Bid2",
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 3,
+              "doc_type": "rfp",
+              "addendum_number": null,
+              "chunk_id": "55e7441e178db912420d090b",
+              "label": "Bid2 — PORFP_-_Dell_Laptop_Final.pdf, page 3"
+            }
+          ],
+          "confidence": 1.0,
+          "notes": ""
+        },
+        "Part_no": {
+          "value": "WD22TB4",
+          "sources": [
+            {
+              "bid_id": "Bid2",
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 3,
+              "doc_type": "rfp",
+              "addendum_number": null,
+              "chunk_id": "55e7441e178db912420d090b",
+              "label": "Bid2 — PORFP_-_Dell_Laptop_Final.pdf, page 3"
+            }
+          ],
+          "confidence": 1.0,
+          "notes": ""
+        },
+        "Product": {
+          "value": "Dell Latitude 5550",
+          "sources": [
+            {
+              "bid_id": "Bid2",
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 3,
+              "doc_type": "rfp",
+              "addendum_number": null,
+              "chunk_id": "55e7441e178db912420d090b",
+              "label": "Bid2 — PORFP_-_Dell_Laptop_Final.pdf, page 3"
+            }
+          ],
+          "confidence": 1.0,
+          "notes": ""
+        },
+        "contact_info": {
+          "value": "Tamaira Hawkins, 410-260-7533, thawkins@treasurer.state.md.us",
+          "sources": [
+            {
+              "bid_id": "Bid2",
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 3,
+              "doc_type": "rfp",
+              "addendum_number": null,
+              "chunk_id": "55e7441e178db912420d090b",
+              "label": "Bid2 — PORFP_-_Dell_Laptop_Final.pdf, page 3"
+            },
+            {
+              "bid_id": "Bid2",
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 2,
+              "doc_type": "rfp",
+              "addendum_number": null,
+              "chunk_id": "d447b3e4ea6d11369471a30b",
+              "label": "Bid2 — PORFP_-_Dell_Laptop_Final.pdf, page 2"
+            },
+            {
+              "bid_id": "Bid2",
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 2,
+              "doc_type": "rfp",
+              "addendum_number": null,
+              "chunk_id": "99980c744d309859cd453276",
+              "label": "Bid2 — PORFP_-_Dell_Laptop_Final.pdf, page 2"
+            }
+          ],
+          "confidence": 1.0,
+          "notes": ""
+        },
+        "company_name": {
+          "value": null,
+          "sources": [],
+          "confidence": 0.0,
+          "notes": "Not found in documents"
+        },
+        "Product Specification": {
+          "value": "Dell Latitude 5550 (SI# CC7802) – 30 units, Microsoft Copilot ready, due 06/10/2024; Dell Thunderbolt 4 Dock – WD22TB4 – 30 units, due 06/10/2024",
+          "sources": [
+            {
+              "bid_id": "Bid2",
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 3,
+              "doc_type": "rfp",
+              "addendum_number": null,
+              "chunk_id": "55e7441e178db912420d090b",
+              "label": "Bid2 — PORFP_-_Dell_Laptop_Final.pdf, page 3"
+            }
+          ],
+          "confidence": 1.0,
+          "notes": ""
+        }
+      },
+      "cited_fields": 6
+    },
+    "token_usage": {
+      "input_tokens": 3807,
+      "output_tokens": 1239,
+      "total_tokens": 5046,
+      "output_token_details": {
+        "reasoning": 638
+      }
+    },
+    "latency_ms": 42654.58,
+    "error": null
+  },
+  {
+    "timestamp_utc": "2026-11-06T15:08:39.067843+00:00",
+    "agent": "extraction_agent",
+    "action": "summary",
+    "status": "error",
+    "input": {
+      "bid_id": "Bid2",
+      "fields": [
+        "Bid Summary"
+      ]
+    },
+    "tool_calls": [],
+    "output": {
+      "fields": [
+        "Bid Summary"
+      ],
+      "error": "Error code: 400 - {'error': {'message': 'Failed to parse tool call arguments as JSON', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '{\"name\": \"ExtractionDraft\", \"arguments\": {\"fields\":{\"Bid Summary\":{\"confidence\":1,\"evidence_indexes\":[0,3,5,6],\"value\":\"The RFP requests 30 Dell Latitude 5550 laptops, Microsoft Copilot‑ready, and 30 Dell Thunderbolt\\u202f4 docks, all due 06/10/2024. Vendors must provide a 3‑year extended Dell limited hardware warranty, with a certificate or affidavit presented upon award. The procurement is a small‑business reserve solicitation, limited to certified small‑business vendors under the state’s SBR program. Questions must be submitted by 06/01/2024\\u202f2:00\\u202fPM\\u202fEDT to thawkins@treasurer.state.md.us, and invoices should be emailed to STOaccountspayable@treasurer.state.md.us within 10\\u202fdays of delivery. The contract requires new, unused, Energy‑Star certified equipment, no restocking fee, a Mercury Affidavit, and delivery within 45\\u202fdays of award.\"}}\"}'}}"
+    },
+    "token_usage": {},
+    "latency_ms": 85986.47,
+    "error": "BadRequestError: Error code: 400 - {'error': {'message': 'Failed to parse tool call arguments as JSON', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '{\"name\": \"ExtractionDraft\", \"arguments\": {\"fields\":{\"Bid Summary\":{\"confidence\":1,\"evidence_indexes\":[0,3,5,6],\"value\":\"The RFP requests 30 Dell Latitude 5550 laptops, Microsoft Copilot‑ready, and 30 Dell Thunderbolt\\u202f4 docks, all due 06/10/2024. Vendors must provide a 3‑year extended Dell limited hardware warranty, with a certificate or affidavit presented upon award. The procurement is a small‑business reserve solicitation, limited to certified small‑business vendors under the state’s SBR program. Questions must be submitted by 06/01/2024\\u202f2:00\\u202fPM\\u202fEDT to thawkins@treasurer.state.md.us, and invoices should be emailed to STOaccountspayable@treasurer.state.md.us within 10\\u202fdays of delivery. The contract requires new, unused, Energy‑Star certified equipment, no restocking fee, a Mercury Affidavit, and delivery within 45\\u202fdays of award.\"}}\"}'}}"
+  },
+  {
+    "timestamp_utc": "2026-11-06T15:08:41.588106+00:00",
+    "agent": "addendum_reconciliation_agent",
+    "action": "reconcile",
+    "status": "no_addendums_found",
+    "input": {
+      "bid_id": "Bid2"
+    },
+    "tool_calls": [
+      {
+        "tool": "hybrid_search",
+        "filters": {
+          "bid_id": "Bid2",
+          "doc_type": "addendum"
+        },
+        "result_count": 0
+      }
+    ],
+    "output": {
+      "changes": 0
+    },
+    "token_usage": {},
+    "latency_ms": 2507.04,
+    "error": null
+  },
+  {
+    "timestamp_utc": "2026-11-06T15:08:41.656427+00:00",
+    "agent": "validator_critic_agent",
+    "action": "validate",
+    "status": "success",
+    "input": {
+      "fields": 20,
+      "evidence_passages": 12
+    },
+    "tool_calls": [],
+    "output": {
+      "passed": 10,
+      "failed": 0,
+      "not_found": 10,
+      "failed_fields": []
+    },
+    "token_usage": {},
+    "latency_ms": 68.68,
+    "error": null
+  },
+  {
+    "timestamp_utc": "2026-11-06T15:08:41.658442+00:00",
+    "agent": "qa_report_agent",
+    "action": "write_final_json",
+    "status": "success",
+    "input": {
+      "bid_id": "Bid2"
+    },
+    "tool_calls": [],
+    "output": {
+      "json_path": "D:\\RFP_Intelligence_Platform\\outputs\\Bid2.json",
+      "fields": 20
+    },
+    "token_usage": {},
+    "latency_ms": 6.7,
+    "error": null
+  }
+]

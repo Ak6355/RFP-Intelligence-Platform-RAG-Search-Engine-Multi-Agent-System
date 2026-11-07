@@ -1,0 +1,258 @@
+{
+  "bid_id": "Bid2",
+  "fields": {
+    "Due Date": {
+      "value": "06/10/2024",
+      "sources": [
+        {
+          "bid_id": "Bid2",
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 1,
+          "doc_type": "rfp",
+          "addendum_number": null,
+          "chunk_id": "aa0531bbf42bc8c71765c83c",
+          "label": "Bid2 — PORFP_-_Dell_Laptop_Final.pdf, page 1"
+        }
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "Bid Submission Type": {
+      "value": "Electronic submission via Emma e‑procurement system",
+      "sources": [
+        {
+          "bid_id": "Bid2",
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 1,
+          "doc_type": "rfp",
+          "addendum_number": null,
+          "chunk_id": "aa0531bbf42bc8c71765c83c",
+          "label": "Bid2 — PORFP_-_Dell_Laptop_Final.pdf, page 1"
+        }
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "Term of Bid": {
+      "value": "90 days",
+      "sources": [
+        {
+          "bid_id": "Bid2",
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2,
+          "doc_type": "rfp",
+          "addendum_number": null,
+          "chunk_id": "99980c744d309859cd453276",
+          "label": "Bid2 — PORFP_-_Dell_Laptop_Final.pdf, page 2"
+        }
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "Pre Bid Meeting": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents"
+    },
+    "Installation": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents"
+    },
+    "Delivery Date": {
+      "value": "45 days after award",
+      "sources": [
+        {
+          "bid_id": "Bid2",
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2,
+          "doc_type": "rfp",
+          "addendum_number": null,
+          "chunk_id": "99980c744d309859cd453276",
+          "label": "Bid2 — PORFP_-_Dell_Laptop_Final.pdf, page 2"
+        }
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "Payment Terms": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents"
+    },
+    "Bid Bond Requirement": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Extraction failed; review agent trace: RateLimitError"
+    },
+    "Any Additional Documentation Required": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Extraction failed; review agent trace: RateLimitError"
+    },
+    "MFG for Registration": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Extraction failed; review agent trace: RateLimitError"
+    },
+    "Contract or Cooperative to use": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Extraction failed; review agent trace: RateLimitError"
+    },
+    "Bid Number": {
+      "value": "e20p4600040",
+      "sources": [
+        {
+          "bid_id": "Bid2",
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 1,
+          "doc_type": "rfp",
+          "addendum_number": null,
+          "chunk_id": "aa0531bbf42bc8c71765c83c",
+          "label": "Bid2 — PORFP_-_Dell_Laptop_Final.pdf, page 1"
+        }
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "Title": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents"
+    },
+    "Model_no": {
+      "value": "CC7802",
+      "sources": [
+        {
+          "bid_id": "Bid2",
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3,
+          "doc_type": "rfp",
+          "addendum_number": null,
+          "chunk_id": "55e7441e178db912420d090b",
+          "label": "Bid2 — PORFP_-_Dell_Laptop_Final.pdf, page 3"
+        }
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "Part_no": {
+      "value": "WD22TB4",
+      "sources": [
+        {
+          "bid_id": "Bid2",
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3,
+          "doc_type": "rfp",
+          "addendum_number": null,
+          "chunk_id": "55e7441e178db912420d090b",
+          "label": "Bid2 — PORFP_-_Dell_Laptop_Final.pdf, page 3"
+        }
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "Product": {
+      "value": "Dell Latitude 5550",
+      "sources": [
+        {
+          "bid_id": "Bid2",
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3,
+          "doc_type": "rfp",
+          "addendum_number": null,
+          "chunk_id": "55e7441e178db912420d090b",
+          "label": "Bid2 — PORFP_-_Dell_Laptop_Final.pdf, page 3"
+        }
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "contact_info": {
+      "value": "Tamaira Hawkins, 410-260-7533, thawkins@treasurer.state.md.us",
+      "sources": [
+        {
+          "bid_id": "Bid2",
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3,
+          "doc_type": "rfp",
+          "addendum_number": null,
+          "chunk_id": "55e7441e178db912420d090b",
+          "label": "Bid2 — PORFP_-_Dell_Laptop_Final.pdf, page 3"
+        },
+        {
+          "bid_id": "Bid2",
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2,
+          "doc_type": "rfp",
+          "addendum_number": null,
+          "chunk_id": "d447b3e4ea6d11369471a30b",
+          "label": "Bid2 — PORFP_-_Dell_Laptop_Final.pdf, page 2"
+        },
+        {
+          "bid_id": "Bid2",
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2,
+          "doc_type": "rfp",
+          "addendum_number": null,
+          "chunk_id": "99980c744d309859cd453276",
+          "label": "Bid2 — PORFP_-_Dell_Laptop_Final.pdf, page 2"
+        }
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "company_name": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents"
+    },
+    "Product Specification": {
+      "value": "Dell Latitude 5550 (SI# CC7802) – 30 units, Microsoft Copilot ready, due 06/10/2024; Dell Thunderbolt 4 Dock – WD22TB4 – 30 units, due 06/10/2024",
+      "sources": [
+        {
+          "bid_id": "Bid2",
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3,
+          "doc_type": "rfp",
+          "addendum_number": null,
+          "chunk_id": "55e7441e178db912420d090b",
+          "label": "Bid2 — PORFP_-_Dell_Laptop_Final.pdf, page 3"
+        }
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "Bid Summary": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Extraction failed; review agent trace: BadRequestError"
+    }
+  },
+  "addendum_changes": [],
+  "validation": {
+    "passed": 10,
+    "failed": 0,
+    "not_found": 10,
+    "issues": [
+      {
+        "field": "__critic_error__",
+        "reason": "Semantic critic unavailable: APIStatusError: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-20b` in organization `org_01m2z0hqjaefyavs0fxh5djr7t` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8980, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+        "retry": false
+      }
+    ],
+    "retry_count": 0,
+    "max_retries": 2
+  }
+}

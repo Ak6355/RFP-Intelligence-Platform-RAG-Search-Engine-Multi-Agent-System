@@ -1,0 +1,502 @@
+[
+  {
+    "timestamp_utc": "2026-11-06T15:34:55.263026+00:00",
+    "agent": "orchestrator_agent",
+    "action": "plan",
+    "status": "success",
+    "input": {
+      "mode": "extract",
+      "bid_id": "Bid1",
+      "question": null
+    },
+    "tool_calls": [],
+    "output": {
+      "plan": [
+        "Retrieve evidence for specialist field groups in parallel",
+        "Reconcile addendums",
+        "Validate every field and citation",
+        "Retry rejected fields up to the configured maximum",
+        "Write cited JSON and agent trace"
+      ]
+    },
+    "token_usage": {},
+    "latency_ms": 0.01,
+    "error": null
+  },
+  {
+    "timestamp_utc": "2026-11-06T15:35:02.782473+00:00",
+    "agent": "extraction_agent",
+    "action": "dates_logistics",
+    "status": "success",
+    "input": {
+      "bid_id": "Bid1",
+      "fields": [
+        "Due Date",
+        "Bid Submission Type",
+        "Term of Bid",
+        "Pre Bid Meeting",
+        "Installation",
+        "Delivery Date",
+        "Payment Terms"
+      ],
+      "query": "Find bid due date and exact submission deadline and time zone, submission method, contract term and renewal, pre-bid meeting, installation, delivery schedule, and payment terms."
+    },
+    "tool_calls": [
+      {
+        "tool": "hybrid_search",
+        "query": "Find bid due date and exact submission deadline and time zone, submission method, contract term and renewal, pre-bid meeting, installation, delivery schedule, and payment terms.",
+        "result_count": 6,
+        "filters": {
+          "bid_id": "Bid1"
+        },
+        "returned_chunks": [
+          "444ee0ba97ea7b3c78f9673a",
+          "f09e09a6fcfd903bc85d5abb",
+          "71f9554abc4e861789440f14",
+          "58ced48d156ca66f63032377",
+          "ee5815f54bdce1e51f97ad1d",
+          "d6911fcf6b5d89712cd965ea"
+        ]
+      }
+    ],
+    "output": {
+      "fields": {
+        "Due Date": {
+          "value": "July 9, 2024 2:00 pm CST",
+          "sources": [
+            {
+              "bid_id": "Bid1",
+              "file": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page": 1,
+              "doc_type": "addendum",
+              "addendum_number": 2,
+              "chunk_id": "f09e09a6fcfd903bc85d5abb",
+              "label": "Bid1 — Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf, page 1"
+            }
+          ],
+          "confidence": 1.0,
+          "notes": ""
+        },
+        "Bid Submission Type": {
+          "value": "manual",
+          "sources": [
+            {
+              "bid_id": "Bid1",
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 9,
+              "doc_type": "rfp",
+              "addendum_number": null,
+              "chunk_id": "58ced48d156ca66f63032377",
+              "label": "Bid1 — JA-207652 Student and Staff Computing Devices FINAL.pdf, page 9"
+            }
+          ],
+          "confidence": 1.0,
+          "notes": ""
+        },
+        "Term of Bid": {
+          "value": null,
+          "sources": [],
+          "confidence": 0.0,
+          "notes": "Not found in documents"
+        },
+        "Pre Bid Meeting": {
+          "value": "June 10, 2024 2:00 pm CST",
+          "sources": [
+            {
+              "bid_id": "Bid1",
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 2,
+              "doc_type": "rfp",
+              "addendum_number": null,
+              "chunk_id": "71f9554abc4e861789440f14",
+              "label": "Bid1 — JA-207652 Student and Staff Computing Devices FINAL.pdf, page 2"
+            }
+          ],
+          "confidence": 1.0,
+          "notes": ""
+        },
+        "Installation": {
+          "value": null,
+          "sources": [],
+          "confidence": 0.0,
+          "notes": "Not found in documents"
+        },
+        "Delivery Date": {
+          "value": null,
+          "sources": [],
+          "confidence": 0.0,
+          "notes": "Not found in documents"
+        },
+        "Payment Terms": {
+          "value": null,
+          "sources": [],
+          "confidence": 0.0,
+          "notes": "Not found in documents"
+        }
+      },
+      "cited_fields": 3
+    },
+    "token_usage": {
+      "input_tokens": 3104,
+      "output_tokens": 860,
+      "total_tokens": 3964,
+      "output_token_details": {
+        "reasoning": 653
+      }
+    },
+    "latency_ms": 7518.15,
+    "error": null
+  },
+  {
+    "timestamp_utc": "2026-11-06T15:35:01.146326+00:00",
+    "agent": "extraction_agent",
+    "action": "commercial_documents",
+    "status": "success",
+    "input": {
+      "bid_id": "Bid1",
+      "fields": [
+        "Bid Bond Requirement",
+        "Any Additional Documentation Required",
+        "MFG for Registration",
+        "Contract or Cooperative to use"
+      ],
+      "query": "Find bid bond or bid security requirement and amount, required affidavits and other forms or certificates, manufacturer authorization or registration, and cooperative or state contract vehicle."
+    },
+    "tool_calls": [
+      {
+        "tool": "hybrid_search",
+        "query": "Find bid bond or bid security requirement and amount, required affidavits and other forms or certificates, manufacturer authorization or registration, and cooperative or state contract vehicle.",
+        "result_count": 6,
+        "filters": {
+          "bid_id": "Bid1"
+        },
+        "returned_chunks": [
+          "d30cdb77eed4b10462c67984",
+          "444ee0ba97ea7b3c78f9673a",
+          "cb8018adb0234f6933eb928c",
+          "40fc921b14c3785ed4967af1",
+          "2c364f8bab0be13ddc5cca4f",
+          "bbcce268348b0e6b62d76993"
+        ]
+      }
+    ],
+    "output": {
+      "fields": {
+        "Bid Bond Requirement": {
+          "value": null,
+          "sources": [],
+          "confidence": 0.0,
+          "notes": "Not found in documents"
+        },
+        "Any Additional Documentation Required": {
+          "value": "Completed, signed, and dated M/WBE compliance guidelines & forms; M/WBE certificates; affirmative action, equal employment opportunity or supplier diversity plan; signed, dated and notarized joint venture agreement; signed, dated and notarized mentor‑protege agreement; minutes or prime‑subcontractor teaming agreement",
+          "sources": [
+            {
+              "bid_id": "Bid1",
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 49,
+              "doc_type": "rfp",
+              "addendum_number": null,
+              "chunk_id": "444ee0ba97ea7b3c78f9673a",
+              "label": "Bid1 — JA-207652 Student and Staff Computing Devices FINAL.pdf, page 49"
+            }
+          ],
+          "confidence": 1.0,
+          "notes": ""
+        },
+        "MFG for Registration": {
+          "value": null,
+          "sources": [],
+          "confidence": 0.0,
+          "notes": "Not found in documents"
+        },
+        "Contract or Cooperative to use": {
+          "value": null,
+          "sources": [],
+          "confidence": 0.0,
+          "notes": "Not found in documents"
+        }
+      },
+      "cited_fields": 1
+    },
+    "token_usage": {
+      "input_tokens": 3295,
+      "output_tokens": 1058,
+      "total_tokens": 4353,
+      "output_token_details": {
+        "reasoning": 626
+      }
+    },
+    "latency_ms": 5876.77,
+    "error": null
+  },
+  {
+    "timestamp_utc": "2026-11-06T15:35:39.708525+00:00",
+    "agent": "extraction_agent",
+    "action": "product_company",
+    "status": "success",
+    "input": {
+      "bid_id": "Bid1",
+      "fields": [
+        "Bid Number",
+        "Title",
+        "Model_no",
+        "Part_no",
+        "Product",
+        "contact_info",
+        "company_name",
+        "Product Specification"
+      ],
+      "query": "Find official solicitation number and title, issuing agency, procurement contact name email and phone, products and quantities, manufacturer model numbers, part numbers, and all technical specifications including CPU RAM storage display and warranty."
+    },
+    "tool_calls": [
+      {
+        "tool": "hybrid_search",
+        "query": "Find official solicitation number and title, issuing agency, procurement contact name email and phone, products and quantities, manufacturer model numbers, part numbers, and all technical specifications including CPU RAM storage display and warranty.",
+        "result_count": 6,
+        "filters": {
+          "bid_id": "Bid1"
+        },
+        "returned_chunks": [
+          "1b951e49981d592f6fd4da6f",
+          "eb9f25a707b68428f238c0eb",
+          "e98ae3a1a4f7d92f805709bf",
+          "f3c23fff3341136cd6bc5271",
+          "9a5561da4bc74a61d736b8f4",
+          "2d109622858fc23b6b54583d"
+        ]
+      }
+    ],
+    "output": {
+      "fields": {
+        "Bid Number": {
+          "value": "JA-207652",
+          "sources": [
+            {
+              "bid_id": "Bid1",
+              "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+              "page": null,
+              "doc_type": "bid_page",
+              "addendum_number": null,
+              "chunk_id": "1b951e49981d592f6fd4da6f",
+              "label": "Bid1 — Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html"
+            }
+          ],
+          "confidence": 0.95,
+          "notes": ""
+        },
+        "Title": {
+          "value": "student and staff computing devices",
+          "sources": [
+            {
+              "bid_id": "Bid1",
+              "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+              "page": null,
+              "doc_type": "bid_page",
+              "addendum_number": null,
+              "chunk_id": "1b951e49981d592f6fd4da6f",
+              "label": "Bid1 — Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html"
+            }
+          ],
+          "confidence": 0.95,
+          "notes": ""
+        },
+        "Model_no": {
+          "value": null,
+          "sources": [],
+          "confidence": 0.0,
+          "notes": "Not found in documents"
+        },
+        "Part_no": {
+          "value": null,
+          "sources": [],
+          "confidence": 0.0,
+          "notes": "Not found in documents"
+        },
+        "Product": {
+          "value": "computing devices",
+          "sources": [
+            {
+              "bid_id": "Bid1",
+              "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+              "page": null,
+              "doc_type": "bid_page",
+              "addendum_number": null,
+              "chunk_id": "1b951e49981d592f6fd4da6f",
+              "label": "Bid1 — Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html"
+            }
+          ],
+          "confidence": 0.9,
+          "notes": ""
+        },
+        "contact_info": {
+          "value": "procurement services 972-925-3700 procurementcs@dallasisd.org",
+          "sources": [
+            {
+              "bid_id": "Bid1",
+              "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+              "page": null,
+              "doc_type": "bid_page",
+              "addendum_number": null,
+              "chunk_id": "1b951e49981d592f6fd4da6f",
+              "label": "Bid1 — Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html"
+            }
+          ],
+          "confidence": 0.9,
+          "notes": ""
+        },
+        "company_name": {
+          "value": "Dallas Independent School District",
+          "sources": [
+            {
+              "bid_id": "Bid1",
+              "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+              "page": null,
+              "doc_type": "bid_page",
+              "addendum_number": null,
+              "chunk_id": "1b951e49981d592f6fd4da6f",
+              "label": "Bid1 — Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html"
+            }
+          ],
+          "confidence": 0.9,
+          "notes": ""
+        },
+        "Product Specification": {
+          "value": "Minimum hardware requirements for each tier of device required by Dallas ISD, including laptops, desktops, tablet devices, and display monitors.",
+          "sources": [
+            {
+              "bid_id": "Bid1",
+              "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+              "page": null,
+              "doc_type": "bid_page",
+              "addendum_number": null,
+              "chunk_id": "1b951e49981d592f6fd4da6f",
+              "label": "Bid1 — Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html"
+            }
+          ],
+          "confidence": 0.9,
+          "notes": ""
+        }
+      },
+      "cited_fields": 6
+    },
+    "token_usage": {
+      "input_tokens": 3704,
+      "output_tokens": 1005,
+      "total_tokens": 4709,
+      "output_token_details": {
+        "reasoning": 622
+      }
+    },
+    "latency_ms": 44435.7,
+    "error": null
+  },
+  {
+    "timestamp_utc": "2026-11-06T15:35:39.419903+00:00",
+    "agent": "extraction_agent",
+    "action": "summary",
+    "status": "error",
+    "input": {
+      "bid_id": "Bid1",
+      "fields": [
+        "Bid Summary"
+      ]
+    },
+    "tool_calls": [],
+    "output": {
+      "fields": [
+        "Bid Summary"
+      ],
+      "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m2z0hqjaefyavs0fxh5djr7t` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6826, Requested 5057. Please try again in 29.1225s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+    },
+    "token_usage": {},
+    "latency_ms": 44142.38,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m2z0hqjaefyavs0fxh5djr7t` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6826, Requested 5057. Please try again in 29.1225s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+  },
+  {
+    "timestamp_utc": "2026-11-06T15:36:37.301513+00:00",
+    "agent": "addendum_reconciliation_agent",
+    "action": "reconcile",
+    "status": "success",
+    "input": {
+      "bid_id": "Bid1",
+      "current_field_count": 20
+    },
+    "tool_calls": [
+      {
+        "tool": "hybrid_search",
+        "query": "Find all explicit amendments, corrections, replacements, extensions, and changes in addendum documents. Check due date, submission time, delivery, product specifications, warranty, bid bond, meetings, forms, and contract conditions.",
+        "filters": {
+          "bid_id": "Bid1",
+          "doc_type": "addendum"
+        },
+        "result_count": 12,
+        "returned_chunks": [
+          "f09e09a6fcfd903bc85d5abb",
+          "3b371ffe1ad9a98e795e3120",
+          "93871afef22ad868b1a3df48",
+          "869e0a4111ad7468bcde2018",
+          "52db705c8a41ab99ea129b10",
+          "9a5561da4bc74a61d736b8f4",
+          "c7842716506f2db8a81f00f2",
+          "e2eda9cdf22daa056ac764ce",
+          "29b9b97b78c0e66c116f4d1f",
+          "52c44d560064a41d1553a055",
+          "927977144b9b7ec536045a39",
+          "9a90b78de747d842e4f616d0"
+        ]
+      }
+    ],
+    "output": {
+      "changes": [],
+      "updated_fields": []
+    },
+    "token_usage": {
+      "input_tokens": 6746,
+      "output_tokens": 860,
+      "total_tokens": 7606,
+      "output_token_details": {
+        "reasoning": 827
+      }
+    },
+    "latency_ms": 57592.09,
+    "error": null
+  },
+  {
+    "timestamp_utc": "2026-11-06T15:36:37.407056+00:00",
+    "agent": "validator_critic_agent",
+    "action": "validate",
+    "status": "success",
+    "input": {
+      "fields": 20,
+      "evidence_passages": 30
+    },
+    "tool_calls": [],
+    "output": {
+      "passed": 10,
+      "failed": 0,
+      "not_found": 10,
+      "failed_fields": []
+    },
+    "token_usage": {},
+    "latency_ms": 106.37,
+    "error": null
+  },
+  {
+    "timestamp_utc": "2026-11-06T15:36:37.409061+00:00",
+    "agent": "qa_report_agent",
+    "action": "write_final_json",
+    "status": "success",
+    "input": {
+      "bid_id": "Bid1"
+    },
+    "tool_calls": [],
+    "output": {
+      "json_path": "D:\\RFP_Intelligence_Platform\\outputs\\Bid1.json",
+      "fields": 20
+    },
+    "token_usage": {},
+    "latency_ms": 0.86,
+    "error": null
+  }
+]

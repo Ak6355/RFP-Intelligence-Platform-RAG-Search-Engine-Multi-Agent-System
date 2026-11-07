@@ -1,0 +1,12 @@
+[
+  {"bid_id":"Bid1","question":"What is the final submission deadline after all addendums?"},
+  {"bid_id":"Bid1","question":"What is the official solicitation number?"},
+  {"bid_id":"Bid1","question":"How must the bid be submitted?"},
+  {"bid_id":"Bid1","question":"Is a pre-bid meeting required?"},
+  {"bid_id":"Bid1","question":"What changes were made by Addendum 2?"},
+  {"bid_id":"Bid2","question":"Which affidavits or certifications are required?"},
+  {"bid_id":"Bid2","question":"What Dell laptop model or part number is requested?"},
+  {"bid_id":"Bid2","question":"What processor, RAM, and storage are specified?"},
+  {"bid_id":"Bid2","question":"What warranty coverage is required?"},
+  {"bid_id":"Bid2","question":"Who is the procurement contact?"}
+]

@@ -1,0 +1,1522 @@
+{
+  "evaluation_questions": 15,
+  "top_k": 5,
+  "ground_truth": "file-name substring + page number labels in questions.json",
+  "summary": {
+    "dense_only": {
+      "Recall@5": 0.7222222222222222,
+      "MRR": 0.6444444444444444
+    },
+    "hybrid_rrf": {
+      "Recall@5": 0.7777777777777778,
+      "MRR": 0.5688888888888889
+    },
+    "hybrid_rrf_reranked": {
+      "Recall@5": 0.8333333333333334,
+      "MRR": 0.5988888888888888
+    }
+  },
+  "per_question": [
+    {
+      "id": "Q01",
+      "bid_id": "Bid1",
+      "question": "What is the official bid or solicitation number?",
+      "methods": {
+        "dense_only": {
+          "recall_at_5": 0.0,
+          "mrr": 0.0,
+          "returned_sources": [
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 41,
+              "chunk_id": "bbcce268348b0e6b62d76993"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 46,
+              "chunk_id": "e98ae3a1a4f7d92f805709bf"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 9,
+              "chunk_id": "58ced48d156ca66f63032377"
+            },
+            {
+              "file_name": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 5,
+              "chunk_id": "3b371ffe1ad9a98e795e3120"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 9,
+              "chunk_id": "ee5815f54bdce1e51f97ad1d"
+            }
+          ]
+        },
+        "hybrid_rrf": {
+          "recall_at_5": 0.0,
+          "mrr": 0.0,
+          "returned_sources": [
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 41,
+              "chunk_id": "bbcce268348b0e6b62d76993"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 14,
+              "chunk_id": "26489539de483c3125081cd1"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 9,
+              "chunk_id": "ee5815f54bdce1e51f97ad1d"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 14,
+              "chunk_id": "acd844f503e9177a4c2a2891"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 9,
+              "chunk_id": "58ced48d156ca66f63032377"
+            }
+          ]
+        },
+        "hybrid_rrf_reranked": {
+          "recall_at_5": 0.0,
+          "mrr": 0.0,
+          "returned_sources": [
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 31,
+              "chunk_id": "9652d1c74f515bbd8d6b5fdd"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 14,
+              "chunk_id": "938d09d474e66d378efe14cd"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 9,
+              "chunk_id": "ee5815f54bdce1e51f97ad1d"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 9,
+              "chunk_id": "d6911fcf6b5d89712cd965ea"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 31,
+              "chunk_id": "a60c52d0d2e75e48574b95da"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q02",
+      "bid_id": "Bid1",
+      "question": "What is the full title of the student and staff computing devices bid?",
+      "methods": {
+        "dense_only": {
+          "recall_at_5": 0.0,
+          "mrr": 0.0,
+          "returned_sources": [
+            {
+              "file_name": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+              "page_number": null,
+              "chunk_id": "1b951e49981d592f6fd4da6f"
+            },
+            {
+              "file_name": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 1,
+              "chunk_id": "f09e09a6fcfd903bc85d5abb"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 39,
+              "chunk_id": "2a7ed4637e400fab0c1b9be9"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 39,
+              "chunk_id": "0230b4ba03cd25a01fae0ea4"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 37,
+              "chunk_id": "4af9fdfee0958beb633b8653"
+            }
+          ]
+        },
+        "hybrid_rrf": {
+          "recall_at_5": 0.0,
+          "mrr": 0.0,
+          "returned_sources": [
+            {
+              "file_name": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+              "page_number": null,
+              "chunk_id": "1b951e49981d592f6fd4da6f"
+            },
+            {
+              "file_name": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 1,
+              "chunk_id": "f09e09a6fcfd903bc85d5abb"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 3,
+              "chunk_id": "0e34962d0ccac2b8ef33ac2d"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 39,
+              "chunk_id": "0230b4ba03cd25a01fae0ea4"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 3,
+              "chunk_id": "b88bd043a391aa5b01e9d7b9"
+            }
+          ]
+        },
+        "hybrid_rrf_reranked": {
+          "recall_at_5": 1.0,
+          "mrr": 0.2,
+          "returned_sources": [
+            {
+              "file_name": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+              "page_number": null,
+              "chunk_id": "1b951e49981d592f6fd4da6f"
+            },
+            {
+              "file_name": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 1,
+              "chunk_id": "f09e09a6fcfd903bc85d5abb"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 3,
+              "chunk_id": "b88bd043a391aa5b01e9d7b9"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 3,
+              "chunk_id": "0e34962d0ccac2b8ef33ac2d"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 1,
+              "chunk_id": "14decbaa221c51d2b7794604"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q03",
+      "bid_id": "Bid1",
+      "question": "What is the final proposal submission deadline after the addendums?",
+      "methods": {
+        "dense_only": {
+          "recall_at_5": 1.0,
+          "mrr": 1.0,
+          "returned_sources": [
+            {
+              "file_name": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 1,
+              "chunk_id": "f09e09a6fcfd903bc85d5abb"
+            },
+            {
+              "file_name": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 5,
+              "chunk_id": "869e0a4111ad7468bcde2018"
+            },
+            {
+              "file_name": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 1,
+              "chunk_id": "93871afef22ad868b1a3df48"
+            },
+            {
+              "file_name": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 5,
+              "chunk_id": "3b371ffe1ad9a98e795e3120"
+            },
+            {
+              "file_name": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 1,
+              "chunk_id": "52db705c8a41ab99ea129b10"
+            }
+          ]
+        },
+        "hybrid_rrf": {
+          "recall_at_5": 1.0,
+          "mrr": 1.0,
+          "returned_sources": [
+            {
+              "file_name": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 1,
+              "chunk_id": "f09e09a6fcfd903bc85d5abb"
+            },
+            {
+              "file_name": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 4,
+              "chunk_id": "29b9b97b78c0e66c116f4d1f"
+            },
+            {
+              "file_name": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 2,
+              "chunk_id": "9a5561da4bc74a61d736b8f4"
+            },
+            {
+              "file_name": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 5,
+              "chunk_id": "3b371ffe1ad9a98e795e3120"
+            },
+            {
+              "file_name": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 1,
+              "chunk_id": "52db705c8a41ab99ea129b10"
+            }
+          ]
+        },
+        "hybrid_rrf_reranked": {
+          "recall_at_5": 1.0,
+          "mrr": 1.0,
+          "returned_sources": [
+            {
+              "file_name": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 1,
+              "chunk_id": "f09e09a6fcfd903bc85d5abb"
+            },
+            {
+              "file_name": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 5,
+              "chunk_id": "3b371ffe1ad9a98e795e3120"
+            },
+            {
+              "file_name": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 1,
+              "chunk_id": "c7842716506f2db8a81f00f2"
+            },
+            {
+              "file_name": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 5,
+              "chunk_id": "869e0a4111ad7468bcde2018"
+            },
+            {
+              "file_name": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 4,
+              "chunk_id": "29b9b97b78c0e66c116f4d1f"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q04",
+      "bid_id": "Bid1",
+      "question": "How must the bidder submit its proposal?",
+      "methods": {
+        "dense_only": {
+          "recall_at_5": 1.0,
+          "mrr": 0.3333333333333333,
+          "returned_sources": [
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 19,
+              "chunk_id": "5c93b9ac493d49c7c200bedc"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 41,
+              "chunk_id": "bbcce268348b0e6b62d76993"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 9,
+              "chunk_id": "ee5815f54bdce1e51f97ad1d"
+            },
+            {
+              "file_name": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 5,
+              "chunk_id": "3b371ffe1ad9a98e795e3120"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 20,
+              "chunk_id": "4402afe879e70cd3c100f2fe"
+            }
+          ]
+        },
+        "hybrid_rrf": {
+          "recall_at_5": 1.0,
+          "mrr": 0.3333333333333333,
+          "returned_sources": [
+            {
+              "file_name": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 5,
+              "chunk_id": "3b371ffe1ad9a98e795e3120"
+            },
+            {
+              "file_name": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 4,
+              "chunk_id": "29b9b97b78c0e66c116f4d1f"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 9,
+              "chunk_id": "ee5815f54bdce1e51f97ad1d"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 49,
+              "chunk_id": "444ee0ba97ea7b3c78f9673a"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 3,
+              "chunk_id": "0e34962d0ccac2b8ef33ac2d"
+            }
+          ]
+        },
+        "hybrid_rrf_reranked": {
+          "recall_at_5": 1.0,
+          "mrr": 0.5,
+          "returned_sources": [
+            {
+              "file_name": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 5,
+              "chunk_id": "3b371ffe1ad9a98e795e3120"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 9,
+              "chunk_id": "ee5815f54bdce1e51f97ad1d"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 48,
+              "chunk_id": "8857ebfcb838732d32e7aaef"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 9,
+              "chunk_id": "d6911fcf6b5d89712cd965ea"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 16,
+              "chunk_id": "d938b8bc002634984411ec82"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q05",
+      "bid_id": "Bid1",
+      "question": "Is a pre-bid meeting scheduled, and is attendance mandatory?",
+      "methods": {
+        "dense_only": {
+          "recall_at_5": 1.0,
+          "mrr": 0.5,
+          "returned_sources": [
+            {
+              "file_name": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+              "page_number": null,
+              "chunk_id": "a3c9c7b2f0c1152c9838278b"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 2,
+              "chunk_id": "71f9554abc4e861789440f14"
+            },
+            {
+              "file_name": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 2,
+              "chunk_id": "e2eda9cdf22daa056ac764ce"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 18,
+              "chunk_id": "47fe5090c5d8001c60b2b0a6"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 47,
+              "chunk_id": "dc8c54706a9a4b41388d54cb"
+            }
+          ]
+        },
+        "hybrid_rrf": {
+          "recall_at_5": 1.0,
+          "mrr": 1.0,
+          "returned_sources": [
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 2,
+              "chunk_id": "71f9554abc4e861789440f14"
+            },
+            {
+              "file_name": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+              "page_number": null,
+              "chunk_id": "a3c9c7b2f0c1152c9838278b"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 47,
+              "chunk_id": "dc8c54706a9a4b41388d54cb"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 41,
+              "chunk_id": "f5c70f8d578b62520df5f187"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 45,
+              "chunk_id": "58cbae0b6da056aad07eb0ce"
+            }
+          ]
+        },
+        "hybrid_rrf_reranked": {
+          "recall_at_5": 1.0,
+          "mrr": 1.0,
+          "returned_sources": [
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 2,
+              "chunk_id": "71f9554abc4e861789440f14"
+            },
+            {
+              "file_name": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+              "page_number": null,
+              "chunk_id": "a3c9c7b2f0c1152c9838278b"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 30,
+              "chunk_id": "6dcc468af583d6fb5e3ca74b"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 30,
+              "chunk_id": "edeb14809766a522aed293ec"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 30,
+              "chunk_id": "9e7c2adb369a0d987bba1a7a"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q06",
+      "bid_id": "Bid1",
+      "question": "Is a bid bond or bid security required?",
+      "methods": {
+        "dense_only": {
+          "recall_at_5": 1.0,
+          "mrr": 1.0,
+          "returned_sources": [
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 17,
+              "chunk_id": "d30cdb77eed4b10462c67984"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 17,
+              "chunk_id": "40fc921b14c3785ed4967af1"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 17,
+              "chunk_id": "cb8018adb0234f6933eb928c"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 52,
+              "chunk_id": "7e23ea15eb110e991ece8d64"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 52,
+              "chunk_id": "84b98d203096a4e5240f6d5c"
+            }
+          ]
+        },
+        "hybrid_rrf": {
+          "recall_at_5": 1.0,
+          "mrr": 1.0,
+          "returned_sources": [
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 17,
+              "chunk_id": "d30cdb77eed4b10462c67984"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 52,
+              "chunk_id": "7e23ea15eb110e991ece8d64"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 17,
+              "chunk_id": "40fc921b14c3785ed4967af1"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 17,
+              "chunk_id": "cb8018adb0234f6933eb928c"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 41,
+              "chunk_id": "f5c70f8d578b62520df5f187"
+            }
+          ]
+        },
+        "hybrid_rrf_reranked": {
+          "recall_at_5": 1.0,
+          "mrr": 0.2,
+          "returned_sources": [
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 41,
+              "chunk_id": "f5c70f8d578b62520df5f187"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 9,
+              "chunk_id": "d6911fcf6b5d89712cd965ea"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 31,
+              "chunk_id": "9652d1c74f515bbd8d6b5fdd"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 48,
+              "chunk_id": "8857ebfcb838732d32e7aaef"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 17,
+              "chunk_id": "40fc921b14c3785ed4967af1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q07",
+      "bid_id": "Bid1",
+      "question": "What delivery schedule or delivery date is required?",
+      "methods": {
+        "dense_only": {
+          "recall_at_5": 0.5,
+          "mrr": 0.3333333333333333,
+          "returned_sources": [
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 7,
+              "chunk_id": "bba19499beb1ef4f8ac85e9f"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 8,
+              "chunk_id": "aac761231c72f369e63485e7"
+            },
+            {
+              "file_name": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 4,
+              "chunk_id": "9a90b78de747d842e4f616d0"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 7,
+              "chunk_id": "8fd04012b6304c6c0f14f240"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 8,
+              "chunk_id": "88903ea76b016783835e6d65"
+            }
+          ]
+        },
+        "hybrid_rrf": {
+          "recall_at_5": 0.0,
+          "mrr": 0.0,
+          "returned_sources": [
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 7,
+              "chunk_id": "fc119b63fa56313fdb0bf10e"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 7,
+              "chunk_id": "fb5c91a268f2e507bb0a7c5d"
+            },
+            {
+              "file_name": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 2,
+              "chunk_id": "e2eda9cdf22daa056ac764ce"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 7,
+              "chunk_id": "bba19499beb1ef4f8ac85e9f"
+            },
+            {
+              "file_name": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 2,
+              "chunk_id": "9a5561da4bc74a61d736b8f4"
+            }
+          ]
+        },
+        "hybrid_rrf_reranked": {
+          "recall_at_5": 0.5,
+          "mrr": 0.3333333333333333,
+          "returned_sources": [
+            {
+              "file_name": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 2,
+              "chunk_id": "e2eda9cdf22daa056ac764ce"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 31,
+              "chunk_id": "ea1e5f86dd762f03e51361fb"
+            },
+            {
+              "file_name": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 4,
+              "chunk_id": "9a90b78de747d842e4f616d0"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 23,
+              "chunk_id": "5d01a99f873024897acee6ad"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 9,
+              "chunk_id": "58ced48d156ca66f63032377"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q08",
+      "bid_id": "Bid1",
+      "question": "What installation, imaging, or deployment services are required?",
+      "methods": {
+        "dense_only": {
+          "recall_at_5": 0.6666666666666666,
+          "mrr": 1.0,
+          "returned_sources": [
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 7,
+              "chunk_id": "201a70fff653e20517dec5b4"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 7,
+              "chunk_id": "5e22f5402df2fb33ad2cb37b"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 3,
+              "chunk_id": "c7c7735b2a6219475845f5d6"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 38,
+              "chunk_id": "08c7721e6c82cbc8d867e17f"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 7,
+              "chunk_id": "c84096a4a98205a8ecf45d92"
+            }
+          ]
+        },
+        "hybrid_rrf": {
+          "recall_at_5": 0.6666666666666666,
+          "mrr": 1.0,
+          "returned_sources": [
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 7,
+              "chunk_id": "201a70fff653e20517dec5b4"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 7,
+              "chunk_id": "5e22f5402df2fb33ad2cb37b"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 7,
+              "chunk_id": "c84096a4a98205a8ecf45d92"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 3,
+              "chunk_id": "c7c7735b2a6219475845f5d6"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 3,
+              "chunk_id": "0f9175d5444426bcac1014df"
+            }
+          ]
+        },
+        "hybrid_rrf_reranked": {
+          "recall_at_5": 1.0,
+          "mrr": 1.0,
+          "returned_sources": [
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 3,
+              "chunk_id": "c7c7735b2a6219475845f5d6"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 7,
+              "chunk_id": "201a70fff653e20517dec5b4"
+            },
+            {
+              "file_name": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page_number": 4,
+              "chunk_id": "29b9b97b78c0e66c116f4d1f"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 7,
+              "chunk_id": "c84096a4a98205a8ecf45d92"
+            },
+            {
+              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page_number": 34,
+              "chunk_id": "acd86c01147a4798945b469a"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q09",
+      "bid_id": "Bid2",
+      "question": "Which affidavits or signed forms must be submitted?",
+      "methods": {
+        "dense_only": {
+          "recall_at_5": 0.6666666666666666,
+          "mrr": 0.5,
+          "returned_sources": [
+            {
+              "file_name": "Contract_Affidavit.pdf",
+              "page_number": 3,
+              "chunk_id": "0a1bc908412551e510140014"
+            },
+            {
+              "file_name": "Contract_Affidavit.pdf",
+              "page_number": 1,
+              "chunk_id": "44a7a5fa86e9b4e0b024f0ad"
+            },
+            {
+              "file_name": "Contract_Affidavit.pdf",
+              "page_number": 1,
+              "chunk_id": "1ab4039eb538ae91dcc13ced"
+            },
+            {
+              "file_name": "Contract_Affidavit.pdf",
+              "page_number": 2,
+              "chunk_id": "c57c7c4ce542b8091eea99d4"
+            },
+            {
+              "file_name": "Mercury_Affidavit.pdf",
+              "page_number": 1,
+              "chunk_id": "b234cb06f8947d7e53f68eb6"
+            }
+          ]
+        },
+        "hybrid_rrf": {
+          "recall_at_5": 1.0,
+          "mrr": 0.5,
+          "returned_sources": [
+            {
+              "file_name": "Contract_Affidavit.pdf",
+              "page_number": 3,
+              "chunk_id": "0a1bc908412551e510140014"
+            },
+            {
+              "file_name": "Mercury_Affidavit.pdf",
+              "page_number": 1,
+              "chunk_id": "b234cb06f8947d7e53f68eb6"
+            },
+            {
+              "file_name": "Contract_Affidavit.pdf",
+              "page_number": 1,
+              "chunk_id": "44a7a5fa86e9b4e0b024f0ad"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 2,
+              "chunk_id": "906617b5f5fc1c1fd1fa11bc"
+            },
+            {
+              "file_name": "Mercury_Affidavit.pdf",
+              "page_number": 1,
+              "chunk_id": "11bc6dc4ac572114ccb15ff8"
+            }
+          ]
+        },
+        "hybrid_rrf_reranked": {
+          "recall_at_5": 1.0,
+          "mrr": 1.0,
+          "returned_sources": [
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 2,
+              "chunk_id": "d447b3e4ea6d11369471a30b"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 2,
+              "chunk_id": "99980c744d309859cd453276"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 2,
+              "chunk_id": "906617b5f5fc1c1fd1fa11bc"
+            },
+            {
+              "file_name": "Mercury_Affidavit.pdf",
+              "page_number": 1,
+              "chunk_id": "b234cb06f8947d7e53f68eb6"
+            },
+            {
+              "file_name": "Contract_Affidavit.pdf",
+              "page_number": 1,
+              "chunk_id": "44a7a5fa86e9b4e0b024f0ad"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q10",
+      "bid_id": "Bid2",
+      "question": "What Dell laptop model number or product model is requested?",
+      "methods": {
+        "dense_only": {
+          "recall_at_5": 1.0,
+          "mrr": 1.0,
+          "returned_sources": [
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 1,
+              "chunk_id": "b7363b8c665c0b12518d7cf3"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 3,
+              "chunk_id": "750a872c2ba095b13a9fe101"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 3,
+              "chunk_id": "9520c5863d73d725b77e8196"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 2,
+              "chunk_id": "e9e57691d73891e670623b44"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 3,
+              "chunk_id": "216dd10d0ab1a3998e9c905c"
+            }
+          ]
+        },
+        "hybrid_rrf": {
+          "recall_at_5": 1.0,
+          "mrr": 0.25,
+          "returned_sources": [
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 3,
+              "chunk_id": "750a872c2ba095b13a9fe101"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 3,
+              "chunk_id": "216dd10d0ab1a3998e9c905c"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 3,
+              "chunk_id": "9520c5863d73d725b77e8196"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 1,
+              "chunk_id": "b7363b8c665c0b12518d7cf3"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 2,
+              "chunk_id": "e9e57691d73891e670623b44"
+            }
+          ]
+        },
+        "hybrid_rrf_reranked": {
+          "recall_at_5": 1.0,
+          "mrr": 0.5,
+          "returned_sources": [
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 3,
+              "chunk_id": "9520c5863d73d725b77e8196"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 1,
+              "chunk_id": "b7363b8c665c0b12518d7cf3"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 3,
+              "chunk_id": "750a872c2ba095b13a9fe101"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 2,
+              "chunk_id": "e9e57691d73891e670623b44"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 3,
+              "chunk_id": "216dd10d0ab1a3998e9c905c"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q11",
+      "bid_id": "Bid2",
+      "question": "What processor, memory, and storage specifications are required?",
+      "methods": {
+        "dense_only": {
+          "recall_at_5": 1.0,
+          "mrr": 1.0,
+          "returned_sources": [
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 1,
+              "chunk_id": "b7363b8c665c0b12518d7cf3"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 3,
+              "chunk_id": "750a872c2ba095b13a9fe101"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 3,
+              "chunk_id": "9520c5863d73d725b77e8196"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 1,
+              "chunk_id": "749bd4fb9e82c63101ddc26b"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 3,
+              "chunk_id": "216dd10d0ab1a3998e9c905c"
+            }
+          ]
+        },
+        "hybrid_rrf": {
+          "recall_at_5": 1.0,
+          "mrr": 1.0,
+          "returned_sources": [
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 1,
+              "chunk_id": "b7363b8c665c0b12518d7cf3"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 3,
+              "chunk_id": "750a872c2ba095b13a9fe101"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 3,
+              "chunk_id": "9520c5863d73d725b77e8196"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 3,
+              "chunk_id": "216dd10d0ab1a3998e9c905c"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 1,
+              "chunk_id": "749bd4fb9e82c63101ddc26b"
+            }
+          ]
+        },
+        "hybrid_rrf_reranked": {
+          "recall_at_5": 1.0,
+          "mrr": 1.0,
+          "returned_sources": [
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 1,
+              "chunk_id": "b7363b8c665c0b12518d7cf3"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 3,
+              "chunk_id": "9520c5863d73d725b77e8196"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 3,
+              "chunk_id": "216dd10d0ab1a3998e9c905c"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 2,
+              "chunk_id": "e9e57691d73891e670623b44"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 1,
+              "chunk_id": "749bd4fb9e82c63101ddc26b"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q12",
+      "bid_id": "Bid2",
+      "question": "What warranty coverage or extended warranty is required?",
+      "methods": {
+        "dense_only": {
+          "recall_at_5": 1.0,
+          "mrr": 1.0,
+          "returned_sources": [
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 3,
+              "chunk_id": "64a9fe48b66fde2ee72c650a"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 3,
+              "chunk_id": "b25c2daf08f0d32a315c96a7"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 3,
+              "chunk_id": "bcade8aec8468f263f398e32"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 3,
+              "chunk_id": "cdb9e02307417e71e61388b9"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 3,
+              "chunk_id": "9520c5863d73d725b77e8196"
+            }
+          ]
+        },
+        "hybrid_rrf": {
+          "recall_at_5": 1.0,
+          "mrr": 1.0,
+          "returned_sources": [
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 3,
+              "chunk_id": "bcade8aec8468f263f398e32"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 3,
+              "chunk_id": "64a9fe48b66fde2ee72c650a"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 3,
+              "chunk_id": "b25c2daf08f0d32a315c96a7"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 3,
+              "chunk_id": "cdb9e02307417e71e61388b9"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 1,
+              "chunk_id": "e5f148a45f1247a016854ced"
+            }
+          ]
+        },
+        "hybrid_rrf_reranked": {
+          "recall_at_5": 1.0,
+          "mrr": 1.0,
+          "returned_sources": [
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 3,
+              "chunk_id": "b25c2daf08f0d32a315c96a7"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 3,
+              "chunk_id": "64a9fe48b66fde2ee72c650a"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 3,
+              "chunk_id": "cdb9e02307417e71e61388b9"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 1,
+              "chunk_id": "e5f148a45f1247a016854ced"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 1,
+              "chunk_id": "fa7172d098a246819d7aaa73"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q13",
+      "bid_id": "Bid2",
+      "question": "Who is the procurement contact and what contact details are provided?",
+      "methods": {
+        "dense_only": {
+          "recall_at_5": 0.0,
+          "mrr": 0.0,
+          "returned_sources": [
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 2,
+              "chunk_id": "d447b3e4ea6d11369471a30b"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 2,
+              "chunk_id": "89abe18d794f34cc82a823e5"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 1,
+              "chunk_id": "b5bef0841c0b53d991a467ee"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 1,
+              "chunk_id": "8ae588c55821bd4da4ba4034"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 2,
+              "chunk_id": "e4c693c04ddc74d787f85d05"
+            }
+          ]
+        },
+        "hybrid_rrf": {
+          "recall_at_5": 1.0,
+          "mrr": 0.2,
+          "returned_sources": [
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 2,
+              "chunk_id": "d447b3e4ea6d11369471a30b"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 2,
+              "chunk_id": "89abe18d794f34cc82a823e5"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 2,
+              "chunk_id": "99980c744d309859cd453276"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 1,
+              "chunk_id": "8ae588c55821bd4da4ba4034"
+            },
+            {
+              "file_name": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+              "page_number": null,
+              "chunk_id": "bbff79bcf5f3e08cfc921b15"
+            }
+          ]
+        },
+        "hybrid_rrf_reranked": {
+          "recall_at_5": 0.0,
+          "mrr": 0.0,
+          "returned_sources": [
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 2,
+              "chunk_id": "d447b3e4ea6d11369471a30b"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 2,
+              "chunk_id": "89abe18d794f34cc82a823e5"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 2,
+              "chunk_id": "99980c744d309859cd453276"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 3,
+              "chunk_id": "a7a234b55ce6b6f8638f0439"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 1,
+              "chunk_id": "b5bef0841c0b53d991a467ee"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q14",
+      "bid_id": "Bid2",
+      "question": "What payment terms or invoicing conditions apply?",
+      "methods": {
+        "dense_only": {
+          "recall_at_5": 1.0,
+          "mrr": 1.0,
+          "returned_sources": [
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 2,
+              "chunk_id": "780e4018f893636a64919ff7"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 3,
+              "chunk_id": "750a872c2ba095b13a9fe101"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 3,
+              "chunk_id": "9520c5863d73d725b77e8196"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 3,
+              "chunk_id": "216dd10d0ab1a3998e9c905c"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 2,
+              "chunk_id": "99980c744d309859cd453276"
+            }
+          ]
+        },
+        "hybrid_rrf": {
+          "recall_at_5": 1.0,
+          "mrr": 0.25,
+          "returned_sources": [
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 3,
+              "chunk_id": "9520c5863d73d725b77e8196"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 3,
+              "chunk_id": "750a872c2ba095b13a9fe101"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 3,
+              "chunk_id": "216dd10d0ab1a3998e9c905c"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 2,
+              "chunk_id": "780e4018f893636a64919ff7"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 2,
+              "chunk_id": "99980c744d309859cd453276"
+            }
+          ]
+        },
+        "hybrid_rrf_reranked": {
+          "recall_at_5": 1.0,
+          "mrr": 1.0,
+          "returned_sources": [
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 2,
+              "chunk_id": "780e4018f893636a64919ff7"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 2,
+              "chunk_id": "2ef31320329d57ff1d875b40"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 3,
+              "chunk_id": "750a872c2ba095b13a9fe101"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 3,
+              "chunk_id": "9520c5863d73d725b77e8196"
+            },
+            {
+              "file_name": "Dell_Laptop_Specs.pdf",
+              "page_number": 3,
+              "chunk_id": "216dd10d0ab1a3998e9c905c"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q15",
+      "bid_id": "Bid2",
+      "question": "Is a cooperative or state contract vehicle referenced?",
+      "methods": {
+        "dense_only": {
+          "recall_at_5": 1.0,
+          "mrr": 1.0,
+          "returned_sources": [
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 1,
+              "chunk_id": "3fd712cacee1edc5c150db6e"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 1,
+              "chunk_id": "fa7172d098a246819d7aaa73"
+            },
+            {
+              "file_name": "Contract_Affidavit.pdf",
+              "page_number": 3,
+              "chunk_id": "0a1bc908412551e510140014"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 1,
+              "chunk_id": "aa0531bbf42bc8c71765c83c"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 1,
+              "chunk_id": "8ae588c55821bd4da4ba4034"
+            }
+          ]
+        },
+        "hybrid_rrf": {
+          "recall_at_5": 1.0,
+          "mrr": 1.0,
+          "returned_sources": [
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 1,
+              "chunk_id": "3fd712cacee1edc5c150db6e"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 1,
+              "chunk_id": "fa7172d098a246819d7aaa73"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 1,
+              "chunk_id": "aa0531bbf42bc8c71765c83c"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 1,
+              "chunk_id": "8ae588c55821bd4da4ba4034"
+            },
+            {
+              "file_name": "Contract_Affidavit.pdf",
+              "page_number": 2,
+              "chunk_id": "c57c7c4ce542b8091eea99d4"
+            }
+          ]
+        },
+        "hybrid_rrf_reranked": {
+          "recall_at_5": 1.0,
+          "mrr": 0.25,
+          "returned_sources": [
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 2,
+              "chunk_id": "d447b3e4ea6d11369471a30b"
+            },
+            {
+              "file_name": "Contract_Affidavit.pdf",
+              "page_number": 1,
+              "chunk_id": "44a7a5fa86e9b4e0b024f0ad"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 2,
+              "chunk_id": "99980c744d309859cd453276"
+            },
+            {
+              "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page_number": 1,
+              "chunk_id": "aa0531bbf42bc8c71765c83c"
+            },
+            {
+              "file_name": "Contract_Affidavit.pdf",
+              "page_number": 2,
+              "chunk_id": "c57c7c4ce542b8091eea99d4"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "note": "Scores are valid only if every expected passage label was manually checked against the source files."
+}

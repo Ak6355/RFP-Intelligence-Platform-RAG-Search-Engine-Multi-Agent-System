@@ -1,0 +1,21 @@
+flowchart TD
+    U[User / Client] --> API[FastAPI]
+    API --> IDX[POST /index]
+    API --> S[GET /search]
+    API --> Q[POST /ask]
+    API --> E[POST /extract]
+    S --> H[Phase 5 Hybrid Search]
+    H --> QD[Qdrant Dense Search]
+    H --> ES[Elasticsearch BM25]
+    H --> RRF[RRF Fusion]
+    RRF --> CE[Cross-Encoder Reranker]
+    Q --> LG[Phase 6 LangGraph]
+    E --> LG
+    IDX --> LG
+    LG --> RET[Retrieval Agent]
+    RET --> H
+    LG --> SP[Specialist Extraction Agents]
+    SP --> ADD[Addendum Reconciliation]
+    ADD --> VAL[Validator / Retry Loop]
+    VAL --> OUT[Bid JSON + Trace]
+    Q --> LOG[Sample Q&A Log + Citations]
